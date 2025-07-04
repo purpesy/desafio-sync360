@@ -4,7 +4,7 @@ class User {
     // Encontra todos
     async findAll(){
         try{
-            var result = await db.select(['nome_usuario', 'foto_usuario', 'idade_usuario', 'rua_usuario', 'bairro_usuario', 'cidade_usuario', 'estado_usuario', 'biografia_usuario']).from('tbl_usuario');
+            var result = await db.select().from('tbl_usuario');
             return result;
         }catch(error){
             console.error("Erro ao buscar usuários: ", error);
@@ -14,7 +14,7 @@ class User {
     // Encontra por ID
     async findById(id){
         try{
-            var result = await db.select(['nome_usuario', 'foto_usuario', 'idade_usuario', 'rua_usuario', 'bairro_usuario', 'cidade_usuario', 'estado_usuario', 'biografia_usuario']).from('tbl_usuario').where('id_usuario', id);
+            var result = await db.select().from('tbl_usuario').where('id_usuario', id);
             if(result.length === 0) {
                 return undefined;
             }else {
