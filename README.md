@@ -1,5 +1,16 @@
 # Projeto Desafio Técnico Sync360.io – Perfil de Usuário
 
+## Deploy
+
+- Link do projeto frontend hospedado no vercel: [https://frotend-sync.vercel.app/](https://frotend-sync.vercel.app/)
+- Link do backend (API) hospedado no Railway: `https://backend-sync-deploy.up.railway.app`
+
+### Observações
+
+- O frontend está configurado para consumir a API do backend através do link acima.
+- Para testar localmente, configure as variáveis de ambiente e rode os dois projetos (frontend e backend) conforme instruções abaixo.
+- O deploy garante que a aplicação esteja disponível online, com integração entre frontend e backend funcionando corretamente.
+
 ## Descrição
 Aplicação web para gerenciamento de perfis de usuário com CRUD completo. Interface responsiva e minimalista usando React/Tailwind CSS no frontend e API RESTful Node.js no backend com MySQL.
 
